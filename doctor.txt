@@ -1,0 +1,84 @@
+## sintoma_alergia
+- tengo los ojos irritados
+- tengo los ojos rojos
+
+## sintoma_anemia
+- sensación de cansancio
+- estoy muy cansado
+
+## sintoma_gripe
+- me duele la cabeza
+- me duele mucho la cabeza
+
+## sintoma_asma
+- dificultad para respirar
+- falta de aire
+
+## sintoma_alzeimer
+- pérdida de orientación
+
+## sintoma_embarazo
+- Ausencia de periodos menstruales
+- no he tenido mi periodo menstrual
+
+## sintoma_hipertiroidismo
+- Frecuencia cardiaca rápida
+- me late el corazón muy rápido
+- el corazón me late muy de prisa
+
+## sintoma_hipotiroidismo
+- fatiga
+- me siento fatigado
+- siento fatiga
+
+## sintoma_diabetes
+- mucha sed
+- tengo mucha sed
+
+## sintoma_sida
+- fiebre
+- inflamación de los ganglios linfáticos
+
+## sintoma_hipertension
+- mareos
+- dificultad para respirar
+
+## sintoma_artritis
+- dolor muscular
+- dolor articular
+
+## sintoma_hepatitisB
+- fatiga
+
+## sintoma_dengue
+- dolor de cabeza
+
+## sintoma_malaria
+- fiebre
+
+## sintoma_varicela
+- debilidad general
+
+## sintoma_ictericia
+- ojos amarillos
+
+## sintoma_diarrea
+- deposiciones flojas y acuosas
+
+## sintoma_catarata
+- disminución de la claridad de la visión
+- incapacidad para ver con luz tenue
+
+## sintoma_neumonia
+- fiebre
+- resfriado
+
+## sintoma_retencionurinaria
+- incapacidad para orinar
+
+## sintoma_insomnia
+- cansancio
+
+## sintoma_covid
+- fiebre
+- tos seca

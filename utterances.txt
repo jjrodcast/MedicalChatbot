@@ -6,12 +6,12 @@
 - Un gusto saludarte! Mi nombre es Medcheck, y estoy aquí para ayudarte agendando tu siguiente teleconsulta.
 
 ## solicita_datos_inicio
-- Para continuar, por favor completa los siguintes datos.
-- Listos para comenzar! por favor completa los siguintes datos.
-- Para comenzar, por favor completa los siguintes datos.
+- Para continuar, por favor completa los siguientes datos.
+- Listos para comenzar! por favor completa los siguientes datos.
+- Para comenzar, por favor completa los siguientes datos.
 
 ## solicita_dni
-- Ingresa el número de tu Documento Nacional de Identificación (DNI):
+- Ingresa el número de tu DNI:
 
 ## solicita_nombre
 - Ingresa tu nombre:
@@ -26,9 +26,13 @@
 - Perfecto! gracias por compartir la información, seguimos!
 - Gracias por la información, continuamos!
 
-## solicita_sintoma
+## solicita_informacion_medica
 - Para seleccionar los mejores especialistas para tu caso, por favor dinos tus síntomas. Procura que tu respuesta sea concisa.
 - Para entender mejor lo que necesitas, por favor compartenos tus síntomas. Procura que tu respuesta sea concisa.
+
+## respuesta_sintoma
+- En base a lo que nos has contado, te recomendamos los siguientes especialistas.
+- De acuerdo a tus sintomas, te podemos recomendar estos especialistas.
 
 ## solicita_datos_final
 - Para terminar, por favor completa los siguintes datos.

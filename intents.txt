@@ -1,0 +1,449 @@
+## saludo
+- hola
+- hola que tal
+- buenas tardes
+- buenos dias
+- buenas noches
+- hola, tengo una consulta
+- quisiera consultar algo
+- hola quiero saber si me pueden ayudar
+- que tal tengo una consulta
+
+## despedida
+- hasta luego
+- nos vemos
+- chau
+- adiós
+- gracias por todo
+- eso es todo muchas gracias
+- gracias por la ayuda
+- me sirvió de mucho el apoyo
+- gracias por la información
+- en otro momento les escribo
+- no deseo nada más
+- es todo por mi parte
+
+## sintoma_alergia
+- tengo los ojos irritados
+- tengo los ojos rojos
+- tengo los ojos llorosos
+- picazon de ojos
+- dolor de ojos
+- me duelen ambos ojos
+- tengo muchos estornudos
+- nariz tapada
+- nariz con mocos
+- tengo la nariz llena de mocos
+- dolor de garganta
+- me duele mucho la garganta
+- picazon de garganta
+- carraspera
+- tengo tos constante
+
+## sintoma_anemia
+- sensación de cansancio
+- estoy muy cansado
+- mareos
+- tengo mareos
+- me siento mareado
+- aturdimiento
+- estoy aturdido
+- me he sentido aturdido
+- debilidad
+- me siento debil
+- me siento muy débil
+- fatiga
+- estoy fatigado
+- me siento fatigado
+- energía disminuida
+- me siento con poca energía
+- no tengo energía
+- piel pálida
+- estoy pálido
+- me veo pálido
+- palidez
+- piel amarillenta
+- tengo la piel amarrilla
+- mi piel esta amarilla
+- el color de mi piel es amarillo
+- palpitaciones
+- siento palpitaciones extrañas
+- el corazón me palpita de forma irregular
+- mi corazon palpita de forma rara
+- latidos del corazón irregulaes
+- siento latidos del corazon irregulaes
+- creo que tengo frecuencia cardiaca alta
+- tengo frecuencia cardiaca alta
+- frecuencia cardiaca alta
+- dificultad para respirar
+- me cuesta mucho respirar
+- me falta el aire constantemente
+- dolor en el pecho
+- siento dolor en el pecho
+- mis manos y pies están fríos
+- siento mis pies fríos
+- mis manos están frías
+- manos y pies fríos
+- dolores de cabeza
+
+## sintoma_gripe
+- me duele la cabeza
+- me duele mucho la cabeza
+- tengo dolor de cabeza
+- dolor de cabeza
+- dolor muscular
+- me duelen los musculos
+- me duele todo el cuerpo
+- tengo dolor muscular 
+- escalofríos
+- siento escalofríos
+- me dan escalofríos
+- pérdida de apetito
+- no tengo apetito
+- dolor de cuerpo
+- dolor generalizado de cuerpo
+- fiebre
+- tengo fiebre
+- tengo temperatura 
+- tengo temperatura alta
+- congestión nasal
+- tengo mocos
+- tengo la nariz con mocos
+- nariz con mocos
+- tengo secreción nasal
+- secreción nasal
+- estornudos
+- estoy con estornudos
+- tos
+- tengo tos
+- dolor de gargánta
+- me duele la garganta
+- me duele mucho la garganta
+- sudoración
+- sudo mucho
+- ganglios linfáticos inflamados
+- mis ganglios linfáticos están inflamados
+- me duele la garganta
+- me duelen mis ganglios
+- náuseas
+- tengo nauseas
+- me dan ganas de vomitar
+- ganas de vomitar
+- sensasión de vómitos
+- presión en el pecho
+- siento presión en el pecho
+- me presiona el pecho
+
+## sintoma_asma
+- dificultad para respirar
+- falta de aire
+- dolor de pecho
+- opresión en el pecho
+- tos
+- pitido al respirar
+- silbido al respirar
+
+## sintoma_alzeimer
+- pérdida de orientación
+- últimamente he perdido el sentido de la orientación
+- me olvido del lugar en el que estoy
+- suelo olvidarme dónde estoy
+- a veces no se donde estoy
+- confusión de lugares
+- suelo confundir los lugares
+- agitación
+- me siento agitado
+- me agito rapidamente
+- cambios de humor
+- tengo cambios de humor repentino
+- me cuesta planificar
+- me es dificil planificarme
+- dificultad para planificar
+- a veces me cuesta planificar mis cosas
+- dificultad para concentrarse
+- no puedo concentrarme
+- a veces me cuesta concentrarme
+- dificultad para resolver problemas
+- a veces tengo dificiltad para resolver problemas
+- dificultad para recordar eventos
+- me cuesta recordar eventos
+- me falla la memoria
+- no me acuerdo de algunas cosas
+- capacidad menor para cuidarse a sí mismo
+- no puedo cuidarme por mi cuenta
+- problemas para encontrar palabras al hablar
+- a veces me trabo y no se qué decir 
+- me cuesta decir lo que pienso al hablar
+- depresión repentina
+- me siento deprimido
+- ultimamente me siento deprimido
+
+## sintoma_embarazo
+- Ausencia de periodos menstruales
+- no he tenido mi periodo menstrual
+- hinchazón y sensibilidad en las mamas
+- siento dolor en las mamas
+- hinchazon en las mamas
+- sensibilidad en las mamas 
+- nauseas y vómitos
+- tengo nauseas
+- tengo ganas de vomitar
+- antojos
+- tengo antojos repentinos
+- aversiones a la comida
+- no soporto el olor a comida
+- no me gusta el olo de la comida
+- fatiga
+- siento fatiga
+- me siento cansado
+- estoy consada
+- dolores de cabeza
+- me duele la cabeza
+- cambios en el estado de ánimo
+- micción frecuente
+- voy al baño frecuentemente
+- ganas de ir al baño constantemente
+
+## sintoma_hipertiroidismo
+- Frecuencia cardiaca rápida
+- me late el corazón muy rápido
+- el corazón me late muy de prisa
+- sudoración excesiva
+- sudo mucho
+- intolerancia al calor
+- no soporto el calor
+- no soporto altas temperaturas
+- me fastidia el calor
+- temblores
+- siento temblores en el cuerpo
+- nerviosismo o agitación
+- me agito mucho
+- me siento agitado constantemente
+- fatiga
+- me siento fatigado
+- siento fatiga
+- pérdida de peso
+- he bajado de peso muy rápido
+- he bajado de peso
+- he perdido peso
+- caída del cabello
+- se me cae el cabello
+- se me cae el pelo
+- pierdo cabello
+- me estoy quedando sin pelo
+- mucho apetito
+- tengo mucha hambre
+- tengo más hambre de lo normal
+- problemas de concentración
+- me cuesta concentrarme
+- deposiciones frecuentes
+- voy al baño constantemente
+- voy al baño a cada rato
+- voy al baño frecuentemente 
+
+## sintoma_hipotiroidismo
+- fatiga
+- me siento fatigado
+- siento fatiga
+- depresión
+- me siento deprimido
+- estoy con depresión
+- leve aumento de peso
+- he subido de peso
+- intolerancia al frío
+- no soporto el frío
+- últimamente no soporto el frío
+- no puedo estar en lugares fríos
+- somnolencia
+- tengo muchas ganas de dormir
+- me cuesta manenerme despierto en el día
+- tengo mucho sueño durante el día
+- estreñimiento
+- estoy estreñido
+- cabello seco y áspero
+- mi cabello está seco
+- mi cabello está áspero
+- mi pelo está seco
+- mi pelo está áspero
+- piel seca y calambres musculares
+- tengo la piel seca
+- tengo calambres musculares
+- calambres en los músculos
+- niveles de colesterol elevados en la sangre
+- tengo el colesterol elevado
+- tengo el nivel de colesterol alto
+
+## sintoma_diabetes
+- mucha sed
+- tengo mucha sed
+- tomo mucha agua durante el día
+- me siendo deshidratado
+- deshidratación
+- estoy deshidratado
+- hambre
+- tengo mucha hambre
+- no siendo saciedad
+- ganas de miccionar
+- tengo muchas ganas de ir al baño
+- voy al baño muchas veces durante el día
+- me dan ganas de ir al baño muchas veces en el día
+- fatiga
+- me siento fatigado
+- siento fatiga
+- visión borrosa
+- veo borroso
+- no veo bien
+- pérdida de peso inesperada
+- he bajado de peso de forma repentina
+- mucha hambre
+- tengo mucha hambre
+- aumento de apetito
+- llagas de curación lenta
+- mis heridas se curan lentamente
+- infecciones frecuentes
+- tengo infecciones frecuentes
+- encías rojas e inflamadas
+- encías inflamadas
+- encías rojas
+- hormigueo o entumecimiento en las manos o los pies
+- sensación de entumecimiento en los pies
+- sensación de entumecimiento en las manos
+- sensación de hormigueo en las manos
+- sensación de hormigueo en los pies
+
+## sintoma_sida
+- fiebre
+- inflamación de los ganglios linfáticos
+- ganglios inflamados
+- dolores musculares y articulares
+- dolor de cabeza
+- dolor de garganta
+- escalofríos
+- sudoración nocturna
+- úlceras en la boca
+
+## sintoma_hipertension
+- mareos
+- dificultad para respirar
+- dolor de cabeza fuerte
+- náuseas
+- vómitos
+- visión borrosa
+- hemorragias nasales
+- sangre en la orina
+- fatiga
+- sangrado nasal
+
+## sintoma_artritis
+- dolor muscular
+- dolor articular
+- inflamación articular
+- rigidez articular
+- fatiga
+- falta de apetito
+- pérdida de energía
+- articulaciones hinchadas
+
+## sintoma_hepatitisB
+- fatiga
+- náuseas
+- dolor en el abdomen
+- dolor abdominal
+- orina oscura
+- dolor articular
+- pérdida de apetito
+- debilidad y fatiga
+- piel amarilla
+- parte blanca del ojo amarilla
+
+## sintoma_dengue
+- dolor de cabeza
+- fiebre
+- agotamiento
+- dolor severo en las articulaciones de los músculos
+- inflamación de los ganglios linfáticos
+- erupción cutánea
+- dolor en los ojos
+
+## sintoma_malaria
+- fiebre
+- escalofríos
+- náuseas
+- vómitos
+- heces con sangre
+- sudoración
+
+## sintoma_varicela
+- debilidad general
+- fiebre muy alta
+- manchas rojas en la piel
+- manchas rojas y fiebre
+- cansancio y sensación de malestar general
+
+## sintoma_ictericia
+- ojos amarillos
+- decoloración amarilla de la piel
+- coloración amarilla de la piel
+- piel clara
+- coloración amarilla dentro de la boca
+- somnolencia excesiva
+- orina oscura o de color marrón
+- heces pálidas
+- heces de color arcilla
+
+## sintoma_diarrea
+- deposiciones flojas y acuosas
+- calambres abdominales
+- dolor de estómago
+- calambres y dolor abdominal
+- fiebre
+- sangre en las heces
+- hinchazón
+- náuseas
+
+## sintoma_catarata
+- disminución de la claridad de la visión
+- incapacidad para ver con luz tenue
+- pérdida de sensibilidad al contraste
+- pérdida de la visión
+- ver halos alrededor de las luces
+- deslumbramiento perturbador en la luz
+- visión borrosa
+
+## sintoma_neumonia
+- fiebre
+- resfriado
+- escalofrios
+- tos
+- dificultad para respirar
+- fatiga
+
+## sintoma_retencionurinaria
+- incapacidad para orinar
+- flujo de orina es débil e interrmpido
+- malestar en la parte inferior del abdomen
+- dolor en la parte inferior del abdomen
+- hinchazón de la parte inferior del abdomen
+
+## sintoma_insomnia
+- cansancio
+- fatiga diurna
+- cambios de humor
+- poca concentración
+- ansiedad
+- dolor de cabeza
+- falta de energía
+
+## sintoma_covid
+- fiebre
+- tos seca
+- cansancio
+- molestias y dolores
+- dolor de garganta
+- diarrea
+- conjuntivitis
+- pérdida del sentido del olfato o del gusto
+- dificultad para respirar
+- falta de aire
+- dolor o presión en el pecho
+- incapacidad para hablar o moverse
