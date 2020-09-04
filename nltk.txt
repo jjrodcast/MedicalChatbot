@@ -1,0 +1,3 @@
+punkt
+snowball_data
+stopwords

@@ -1,0 +1,15 @@
+Flask==1.1.1
+Flask-Cors==2.1.2
+numpy==1.18.5
+virtualenv==15.1.0
+gunicorn==19.7.1
+requests
+sklearn
+nltk
+snowballstemmer
+pymessenger
+spacy
+es-lemmatizer
+unidecode
+pandas
+https://github.com/explosion/spacy-models/releases/download/es_core_news_md-2.2.5/es_core_news_md-2.2.5.tar.gz

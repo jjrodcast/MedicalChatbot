@@ -1,0 +1,58 @@
+## saludo
+- Hola! Mi nombre es MedCheck. ¿Listo para agendar tu siguiente teleconsulta?
+- Un gusto conocerte! Mi nombre es Medcheck, tu asistente de teleconsulta.
+- Buen día! Me llamo Medcheck, tu asistente de teleconsulta.
+- Hola! Soy tu asistente de teleconsulta, MedCheck.
+- Un gusto saludarte! Mi nombre es Medcheck, y estoy aquí para ayudarte agendando tu siguiente teleconsulta.
+
+## solicita_datos_inicio
+- Para continuar, por favor completa los siguintes datos.
+- Listos para comenzar! por favor completa los siguintes datos.
+- Para comenzar, por favor completa los siguintes datos.
+
+## solicita_dni
+- Ingresa el número de tu Documento Nacional de Identificación (DNI):
+
+## solicita_nombre
+- Ingresa tu nombre:
+
+## solicita_apellidos
+- Ingresa tus apellidos:
+
+## solicita_reingresar_datos
+- Por favor vuelve a ingresar tus datos, el formato no es correcto.
+
+## ingreso_datos_inicio_ok
+- Perfecto! gracias por compartir la información, seguimos!
+- Gracias por la información, continuamos!
+
+## solicita_sintoma
+- Para seleccionar los mejores especialistas para tu caso, por favor dinos tus síntomas. Procura que tu respuesta sea concisa.
+- Para entender mejor lo que necesitas, por favor compartenos tus síntomas. Procura que tu respuesta sea concisa.
+
+## solicita_datos_final
+- Para terminar, por favor completa los siguintes datos.
+- Ya casi terminamos! por favor completa los siguintes datos.
+
+## solicita_correo
+- Ingresa tu dirección de correo electrónico:
+
+## solicita_celular
+- Ingresa tu número de celular:
+
+## solicita_datos_final_ok
+- Listo! gracias por compartir la información.
+- Gracias por la información!
+
+## solicita_confirmación_final
+- ¿Estás conforme con reservar la cita?.
+
+## confirmación_final
+- Todo en orden! Te llegará un correo con el link para tu teleconsulta.
+
+## despedida
+- Espero que todo haya sido de tu agrado, nos vemos!
+- Muchas gracias por confiar en nosotros, hasta luego!
+- Todo listo para tu cita! Un gusto conversar contigo.
+- Un gusto conversar contigo, nos vemos!
+- Eso fue rápido! Tu cita está agendada. Hasta luego!
