@@ -1,8 +1,10 @@
 import os
 
 ACCESS_TOKEN = os.environ.get('PAGE_ACCESS_TOKEN', None)
-VERIFY_TOKEN = os.environ.get('VERIFY_TOKEN', None)
-ACCESS_TOKEN_TEST = os.environ.get('TEST_ACCESS_TOKEN', None)
+VERIFY_TOKEN = "Med"
+#os.environ.get('VERIFY_TOKEN', None)
+ACCESS_TOKEN_TEST = "EAARvRzP5StsBAIBGd2ixFgsD38M8lEpur3cTNwxrxrsAmB8KhQtkdeAtpWm8AUw8IMAat9DMzaZAyjx8iijcOZCgZBrl2hVBznt0Th8uxS1rC659eLtBLu1aeKrP48ZB58ZBSaDGhwn0BVVGaZATZAFXoeA9l2Yfm4p7RdWldXBLQZDZD"
+#os.environ.get('TEST_ACCESS_TOKEN', None)
 
 DOC_MAX_LENGTH = 8
 TYPE_MESSAGE = 'message'

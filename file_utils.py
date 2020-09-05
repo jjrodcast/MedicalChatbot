@@ -16,6 +16,16 @@ def read_json(file_name):
 			json.dump(file, f)
 	return file
 
+def Guardar_Estado(new_estado):
+  file = open('Estado.txt', 'w')
+  file.write(new_estado)
+  file.close()
+def Leer_Estado():
+  file = open('Estado.txt', 'r')
+  estado = file.read()
+  file.close()
+  return estado
+
 def read_file(file_name):
 	"""Leemos el archivo y mapeamos los datos a un diccionario"""
 	content = {}

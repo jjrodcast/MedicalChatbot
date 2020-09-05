@@ -4,20 +4,21 @@ from vars import *
 from pymessenger import Bot, Element
 from predictor import predict_intent
 from random import choice
+from file_utils import *
 
 def check_document(text):
     """ Verifica si el texto ingresado es un documento válido"""
     text = text.strip()
-    is_numeric = True if text.is_numeric() and len(text) == DOC_MAX_LENGTH else False
-    reply = "next_question" if is_numeric else "try_again"
-    return reply
+    is_numeric = True if text.isnumeric() and len(text) == DOC_MAX_LENGTH else False
+    #reply = "next_question" if is_numeric else False
+    return is_numeric
 
 def check_name(text):
     """ Verifica si el texto ingresado es un nombre válido """
     text = text.strip()
     is_alpha = text.replace(' ', '').isalpha()
-    reply = "next_question" if is_alpha else "try_again"
-    return reply
+    #reply = "next_question" if is_alpha else "try_again"
+    return is_alpha
 
 def verify_webhook(req):
     if req.args.get("hub.verify_token") == VERIFY_TOKEN:
@@ -39,30 +40,116 @@ def do_conversational_flow(bot, req, utterances, model, encoder, vector, stemmer
             text = get_postback(message)
 
     # Verificamos el tipo de respuesta [texto, postback]
+    estado = Leer_Estado()
     if conversation_type == TYPE_MESSAGE_CODE:
-        # Realizamos la predicciónß
-        intent = predict_intent(text, model, encoder, vector, stemmer, stopwords)
+      if estado == "Saludo_Inicio":
+          intent = predict_intent(text, model, encoder, vector, stemmer, stopwords) # Realizamos la predicción
+          if intent == PREDICT_WELCOME: #si el intent es saludo_inicial
+            chatbot_reply = "Hola!, un gusto saludarte. Soy MedCheck, ¿Con cuál de las dos opciones te puedo ayudar?"
+            bot.send_text_message(sender_id, chatbot_reply)
+            buttons = [{"type":"phone_number", "title":"Emergencia", "payload":"+51990092571"}, {"type":"postback", "title":"Agendar Consulta Médica", "payload":"consulta"}]
+            bot.send_button_message(sender_id, "Selecciona una opción", buttons)
+          else: #si el intent es cualquier otra cosa que no sea saludo_inicial
+            chatbot_reply = "Dejame primero introducirme. Soy MedCheck y tengo estas dos opciones con las que te puedo ayudar."
+            buttons = [{"type":"phone_number", "title":"Emergencia", "payload":"+51990092571"}, {"type":"postback", "title":"Agendar Consulta Médica", "payload":"consulta"}]
+            bot.send_button_message(sender_id, "Selecciona una opción", buttons)
+            bot.send_text_message(sender_id, chatbot_reply)
+      elif estado == "Solicita_DNI":
+          if check_document(text) == False:
+            chatbot_reply = "Uy, el formato es incorrecto. Por favor vuelve a ingresar tu DNI"
+            bot.send_text_message(sender_id, chatbot_reply)
+            Guardar_Estado("Solicita_DNI")
+          else:
+            chatbot_reply = "¿Cuál es tu Nombre?"
+            bot.send_text_message(sender_id, chatbot_reply)
+            Guardar_Estado("Solicita_Nombre") 
+      elif estado == "Solicita_Nombre":
+          if check_name(text) == False:
+            chatbot_reply = "Uy, el formato es incorrecto. Por favor vuelve a ingresar tu Nombre"
+            bot.send_text_message(sender_id, chatbot_reply)
+            Guardar_Estado("Solicita_Nombre")
+          else:
+              chatbot_reply = "¿Cuál es tu Apellido?"
+              bot.send_text_message(sender_id, chatbot_reply)
+              Guardar_Estado("Solicita_Apellido")    
+      elif estado == "Solicita_Apellido":
+          if check_name(text) == False:
+            chatbot_reply = "Uy, el formato es incorrecto. Por favor vuelve a ingresar tu Apellido"
+            bot.send_text_message(sender_id, chatbot_reply)
+            Guardar_Estado("Solicita_Apellido")
+          else:
+            chatbot_reply = "Listo!, ahora pasemos a registrar tus síntomas. Cuéntame, ¿cuáles son?"
+            bot.send_text_message(sender_id, chatbot_reply)
+            Guardar_Estado("Solicita_Sintomas")
+      elif estado == "Solicita_Sintomas":
+          sintoma = predict_intent(text, model, encoder, vector, stemmer, stopwords) # Realizamos la predicción
+          if sintoma == "sintoma_asma":
+            chatbot_reply = "En base a lo que nos has contado, te recomendamos los siguientes especialistas."
+            bot.send_text_message(sender_id, chatbot_reply)
+            elements = [{
+                "title":"Doctor 1",
+                "image_url":"https://petersfancybrownhats.com/company_image.png",
+                "subtitle":"Especialista en traumatología",
+                "buttons":[{
+                    "type":"web_url",
+                    "url":"https://petersfancybrownhats.com",
+                    "title":"Revisa su Curriculum"},
+                    {
+                    "type":"postback",
+                    "title":"Agendar",
+                    "payload":"doctor1"
+                  }]}, {
+                "title":"Doctor 2",
+                "image_url":"https://petersfancybrownhats.com/company_image.png",
+                "subtitle":"Especialista en hipertensión",
+                "buttons":[{
+                    "type":"web_url",
+                    "url":"https://petersfancybrownhats.com",
+                    "title":"Revisa su Curriculum"},
+                    {
+                    "type":"postback",
+                    "title":"Agendar",
+                    "payload":"doctor2"
+                  }]}]
+            bot.send_generic_message(sender_id, elements) 
 
-        if intent == PREDICT_WELCOME:
-            send_text_message(bot, sender_id, choose_utterance(intent, utterances))
-            send_text_message(bot, sender_id, choose_utterance('solicita_datos_inicio', utterances))
-            send_text_message(bot, sender_id, choose_utterance('solicita_dni', utterances))
-        elif intent == PREDICT_FAREWELL:
-            send_text_message(bot, sender_id, choose_utterance(intent, utterances))
-        else:# Se está prediciendo un sintoma
-            send_text_message(bot, sender_id, choose_utterance(intent, utterances))
-            create_doctors_temp(bot, sender_id)
+        ##if intent == PREDICT_WELCOME:
+        ##    send_text_message(bot, sender_id, choose_utterance(intent, utterances))
+        ##    send_text_message(bot, sender_id, choose_utterance('solicita_datos_inicio', utterances))
+        ##    send_text_message(bot, sender_id, choose_utterance('solicita_dni', utterances))
+        ##elif intent == PREDICT_FAREWELL:
+        ##    send_text_message(bot, sender_id, choose_utterance(intent, utterances))
+        ##else:# Se está prediciendo un sintoma
+        ##    send_text_message(bot, sender_id, choose_utterance(intent, utterances))
+        ##    create_doctors_temp(bot, sender_id)
 
     elif conversation_type == TYPE_POSTBACK_CODE:
-        response = ""
-        if text == OPTION_EMERGENCY_CALL:
-            response = CALL_REPLAY
-        elif text == OPTION_DOCTOR_SELECTED:
-            response = QUERY_REPLAY
-        else:# Se está consultando por un doctor
-            response = DOCTOR_REPLAY.format(text)
-            
-        send_text_message(bot, sender_id, response)
+      if text == "+51990092571":
+        chatbot_reply = "Llamando a Emergencia..."
+        bot.send_text_message(sender_id, chatbot_reply)
+        Guardar_Estado("Saludo_Inicio")
+      elif text == "consulta":
+        chatbot_reply = "De acuerdo, para comenzar ayúdame con la siguiente información."
+        bot.send_text_message(sender_id, chatbot_reply)
+        chatbot_reply = "¿Cuál es el número de tu DNI?"
+        bot.send_text_message(sender_id, chatbot_reply)
+        Guardar_Estado("Solicita_DNI")
+      elif text == "doctor1":
+        chatbot_reply = "Bien!, has seleccionado al Doctor 1"
+        bot.send_text_message(sender_id, chatbot_reply)
+      elif text == "doctor2":
+        chatbot_reply = "Bien!, has seleccionado al Doctor 2"
+        bot.send_text_message(sender_id, chatbot_reply)        
+        
+        
+       # response = ""
+       # if text == OPTION_EMERGENCY_CALL:
+       #     response = CALL_REPLAY
+       # elif text == OPTION_DOCTOR_SELECTED:
+       #     response = QUERY_REPLAY
+       # else:# Se está consultando por un doctor
+       #     response = DOCTOR_REPLAY.format(text)     
+       # send_text_message(bot, sender_id, response)
     else:
         return 'No entiendo el mensaje'
     

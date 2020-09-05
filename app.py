@@ -4,12 +4,16 @@ import nltk
 from flask import Flask, render_template, request, json
 from bot_utils import check_document, check_name, verify_webhook, do_conversational_flow, create_bot
 from file_utils import read_file
+from flask_ngrok import run_with_ngrok
 from predictor import load_encoder, load_model, load_vector
 from preprocess import get_stemmer, get_stopwords
 from vars import *
 
 #region Cargar modelos y Stemmer
 """Cargamos los modelos y Stemmer"""
+file = open('Estado.txt', 'w')
+file.write("Saludo_Inicio")
+file.close()
 nltk.download('punkt')
 nltk.download('stopwords')
 model = load_model()
@@ -26,7 +30,7 @@ utterances = read_file('utterances.txt')
 #endregion
 
 app = Flask(__name__)
-
+run_with_ngrok(app)
 def process_message(text):
     """ Esta función es una prueba, tiene que ser removida en caso se quiera realizar
         una tarea más genérica.
@@ -62,4 +66,4 @@ def testwebhook():
         return 'Error de solicitud'
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
