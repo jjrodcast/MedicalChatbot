@@ -3,28 +3,32 @@
 import os
 import json
 
-def read_json(file_name):
-	exists = os.path.exists(file_name)
-	file = {}
-	if exists:
-		with open(file_name) as f:
-			file = json.load(f)
-	else:
-		file['sender_id'] = '-'
-		file['last_step'] = '-'
-		with open(file_name, 'w') as f:
-			json.dump(file, f)
-	return file
+def save_state(new_state):
+	file = open('estado.txt', 'w')
+	file.write(new_state)
+	file.close()
 
-def Guardar_Estado(new_estado):
-  file = open('Estado.txt', 'w')
-  file.write(new_estado)
-  file.close()
-def Leer_Estado():
-  file = open('Estado.txt', 'r')
-  estado = file.read()
-  file.close()
-  return estado
+def read_state():
+	file = open('estado.txt', 'r')
+	state = file.read()
+	file.close()
+	return state
+
+def load_info():
+	file = open('information.txt', 'r')
+	info = file.read()
+	file.close()
+	return info
+
+def save_info(info):
+	file = open('information.txt', 'w')
+	file.write(info)
+	file.close()
+
+def reload_info():
+	file = open('informatiion.txt', 'w')
+	file.write('')
+	file.close()
 
 def read_file(file_name):
 	"""Leemos el archivo y mapeamos los datos a un diccionario"""

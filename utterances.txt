@@ -6,53 +6,84 @@
 - Un gusto saludarte! Mi nombre es Medcheck, y estoy aquí para ayudarte agendando tu siguiente teleconsulta.
 
 ## solicita_datos_inicio
-- Para continuar, por favor completa los siguientes datos.
 - Listos para comenzar! por favor completa los siguientes datos.
 - Para comenzar, por favor completa los siguientes datos.
+- De acuerdo, para comenzar ayúdame con la siguiente información.
+
+## presentacion_bot_alternativa
+- Dejame primero presentarme. Soy MedCheck y tengo estas dos opciones con las que te puedo ayudar.
+- Antes de empezar. Soy MedCheck y te puedo ayudar en las siguientes opciones.
 
 ## solicita_dni
-- Ingresa el número de tu DNI:
+- {} ¿Cuál es el número de tu DNI?
+- {}. Brindanos el número de tu DNI:
+- {}. Ingresa tu DNI:
+
+## solicita_reingresar_dni
+- Uy, el formato es incorrecto. Por favor vuelve a ingresar tu DNI
+- El DNI que ingresaste no es válido, vuelve a ingresarlo.
 
 ## solicita_nombre
+- ¿Cuál es tu nombre?
+- Brindanos tu nombre:
 - Ingresa tu nombre:
 
-## solicita_apellidos
-- Ingresa tus apellidos:
+## solicita_reingresar_nombre
+- El nombre brindado no es válido, vuelve a ingresarlo.
+- No pudimos verificar tu nombre, ingresa nuevamente.
 
-## solicita_reingresar_datos
-- Por favor vuelve a ingresar tus datos, el formato no es correcto.
+## solicita_apellido
+- {} ¿Cuales es tu apellido?
+- {}. Brindanos tu apellido:
+- {}. Ingresa tu apellido:
+
+## solicita_reingresar_apellido
+- El apellido brindado no es válido, vuelve a ingresarlo.
+- No pudimos verificar tu apellido, ingresa nuevamente.
 
 ## ingreso_datos_inicio_ok
 - Perfecto! gracias por compartir la información, seguimos!
 - Gracias por la información, continuamos!
 
 ## solicita_informacion_medica
-- Para seleccionar los mejores especialistas para tu caso, por favor dinos tus síntomas. Procura que tu respuesta sea concisa.
-- Para entender mejor lo que necesitas, por favor compartenos tus síntomas. Procura que tu respuesta sea concisa.
+- Ahora pasemos a registrar tus síntomas. Cuéntame, ¿cuáles son?
+- Para entender mejor lo que necesitas, por favor compartenos tus síntomas.
+
+## solicita_reingresar_informacion_medica
+- Volvamos a registrar tus síntomas. Cuéntame, ¿Cuáles son?
+- Comentanos nuevamente, ¿Cuáles son tus síntomas?
+
+## conforme_informacion_medica
+- Perfecto!, continuemos.
+- Muy bien, continuemos.
+
+## informacion_parcial
+- Muy bien, ya casi terminamos!
+- Estamos a poco de terminar.
 
 ## respuesta_sintoma
 - En base a lo que nos has contado, te recomendamos los siguientes especialistas.
 - De acuerdo a tus sintomas, te podemos recomendar estos especialistas.
 
-## solicita_datos_final
-- Para terminar, por favor completa los siguintes datos.
-- Ya casi terminamos! por favor completa los siguintes datos.
+## solicita_celular
+- {}. Brindanos tu número de celular:
+- {}. Ingresa tu número de celular:
+
+## solicita_reingresar_celular
+- No pudimos validar tu número de contacto, vuelve a ingresarlo.
+- El número de contacto no es válido, ingresa nuevamente.
 
 ## solicita_correo
-- Ingresa tu dirección de correo electrónico:
+- {}, para enviar el link de la teleconsulta. Brindanos tu dirección de correo electrónico:
+- {}, para enviar el link de la teleconsulta. Ingresa tu dirección de correo electrónico:
 
-## solicita_celular
-- Ingresa tu número de celular:
+## solicita_reingresar_correo
+- El correo electrónico brindado no es válido, vuelve a ingresarlo.
+- No pudimos verificar tu correo electrónico, ingresa nuevamente.
 
-## solicita_datos_final_ok
-- Listo! gracias por compartir la información.
-- Gracias por la información!
-
-## solicita_confirmación_final
-- ¿Estás conforme con reservar la cita?.
-
-## confirmación_final
-- Todo en orden! Te llegará un correo con el link para tu teleconsulta.
+## confirmacion_final
+- {}. Tu cita ha sido agendada! Un correo electrónico con la confirmación de la cita debe estar llegando a tu buzón en las próximas horas.
+- {}. Cita agendada! Te llegará un correo con el link para tu teleconsulta.
 
 ## despedida
 - Espero que todo haya sido de tu agrado, nos vemos!

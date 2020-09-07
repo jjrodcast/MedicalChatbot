@@ -1,0 +1,82 @@
+## sintoma_alergia
+- Juan Rojas|doc1|Especialidad: Alergólogo
+- Maria Castillo|doc2|Especialidad: Alergóloga
+
+## sintoma_anemia
+- Esther Carrillo|doc3|Especialidad: Hematóloga
+- Julio Castro|doc4|Especialidad: Gastroenterólogo
+
+## sintoma_gripe
+- Kevin Bendezú|doc5|Especialidad: Médico General
+- Ricardo Salvadoe|doc6|Especialidad: Médico General
+
+## sintoma_asma
+- Oscar Ríos|doc7|Especialidad: Neumólogo
+- Catalina Rosas|doc8|Especialidad: Neumóloga
+
+## sintoma_alzeimer
+- Cristian Silvestre|doc9|Especialidad: Neurólogo
+
+## sintoma_embarazo
+- Carla Villavicencio|doc10|Especialidad: Ginecóloga
+- Rodrigo Mendez|doc11|Especialidad: Ginecólogo
+
+## sintoma_hipertiroidismo
+- Lourdes Savogal|doc12|Especialidad: Endocrinóloga
+
+## sintoma_hipotiroidismo
+- Julio Velasquez|doc13|Especialidad: Endocrinólogo
+
+## sintoma_diabetes
+- Mariano Suarez|doc14|Especialidad: Endocrinología
+- Daniel Zevallos|doc15|Especialidad: Médico General
+
+## sintoma_sida
+- Gema Ríos|doc16|Especialidad: Infectólogo
+
+## sintoma_hipertension
+- Eduardo Jauregui|doc17|Especialidad: Cardiólogo
+- Camilo Avellaneda|doc18|Especialidad: Nefrólogo
+- Facundo Valdez|doc19|Especialidad: Cardiólogo
+
+## sintoma_artritis
+- Milagros Villalta|doc20|Especialidad: Reunatóloga
+- Francisco Flores|doc21|Especialidad: Fisioterapeuta
+
+## sintoma_hepatitisB
+- Pablo Llanos|doc22|Especialidad: Hepatólogo
+
+## sintoma_dengue
+- Marcelo Odar|doc23|Especialidad: Médico General
+
+## sintoma_malaria
+- Ramiro Barco|doc24|Especialidad: Infectólogo
+
+## sintoma_varicela
+- Alejandra Silva|doc25|Especialidad: Pediatra
+
+## sintoma_ictericia
+- Mirian Juarez|doc26|Especialidad: Gastroenteróloga
+
+## sintoma_diarrea
+- David Caballero|doc27|Especialidad: Médico General
+
+## sintoma_catarata
+- Violeta Carranza|doc29|Especialidad: Oftalmóloga
+- Tatiana Valencia|doc30|Especialidad: Oftalmóloga
+
+## sintoma_neumonia
+- Jose Martinez|doc31|Especialidad: Neumóloga
+- Lucia Soldado|doc32
+
+## sintoma_retencionurinaria
+- Luis Orozco|doc33|Especialidad: Urólogo
+
+## sintoma_insomnia
+- Pablo Rodriguez|doc34|Especialidad: Psicólogo
+
+## sintoma_covid
+- Kathy Paredes|doc35|Especialidad: Neumóloga
+- Carlos Duarte|doc36|Especialidad: Neumólogo
+- Ramiro Ponce|doc36|Especialidad: Neumólogo
+- Mariana Flores|doc37|Especialidad: Neumóloga
