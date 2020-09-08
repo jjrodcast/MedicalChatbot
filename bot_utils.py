@@ -124,7 +124,7 @@ def do_conversational_flow(bot, req, utterances, model, encoder, vector, stemmer
             doctor = text.split("_")[0]
             doctor = capitalize(doctor)
             send_text_message(bot, sender_id, DOCTOR_REPLAY.format(doctor))
-            send_button_message(bot, sender_id, create_confirmation_buttons(), '¿Estás conforme con tu elección')
+            send_button_message(bot, sender_id, create_confirmation_buttons(), '¿Estás conforme con tu elección?')
             save_state(STATE_SYMPTOM_CONFIRMATION)
         elif text == OPTION_ALL_OK:
             send_text_message(bot, sender_id, choose_utterance(RESPONSE_SYMPTOMS_OK, utterances))
@@ -179,7 +179,7 @@ def choose_utterance(intent, utterances):
 
 #region Funciones para enviar mensajes del bot por medio de Facebook
 def create_bot():
-    return Bot(ACCESS_TOKEN_TEST)
+    return Bot(ACCESS_TOKEN)
 
 def send_text_message(bot, sender_id, utterance):
     bot.send_text_message(sender_id, utterance)

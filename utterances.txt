@@ -16,7 +16,7 @@
 
 ## solicita_dni
 - {} ¿Cuál es el número de tu DNI?
-- {}. Brindanos el número de tu DNI:
+- {}. Bríndanos el número de tu DNI:
 - {}. Ingresa tu DNI:
 
 ## solicita_reingresar_dni
@@ -25,7 +25,7 @@
 
 ## solicita_nombre
 - ¿Cuál es tu nombre?
-- Brindanos tu nombre:
+- Bríndanos tu nombre:
 - Ingresa tu nombre:
 
 ## solicita_reingresar_nombre
@@ -34,7 +34,7 @@
 
 ## solicita_apellido
 - {} ¿Cuales es tu apellido?
-- {}. Brindanos tu apellido:
+- {}. Bríndanos tu apellido:
 - {}. Ingresa tu apellido:
 
 ## solicita_reingresar_apellido
@@ -47,7 +47,7 @@
 
 ## solicita_informacion_medica
 - Ahora pasemos a registrar tus síntomas. Cuéntame, ¿cuáles son?
-- Para entender mejor lo que necesitas, por favor compartenos tus síntomas.
+- Para entender mejor lo que necesitas, por favor compártenos tus síntomas.
 
 ## solicita_reingresar_informacion_medica
 - Volvamos a registrar tus síntomas. Cuéntame, ¿Cuáles son?
@@ -63,10 +63,10 @@
 
 ## respuesta_sintoma
 - En base a lo que nos has contado, te recomendamos los siguientes especialistas.
-- De acuerdo a tus sintomas, te podemos recomendar estos especialistas.
+- De acuerdo a tus síntomas, te podemos recomendar estos especialistas.
 
 ## solicita_celular
-- {}. Brindanos tu número de celular:
+- {}. Bríndanos tu número de celular:
 - {}. Ingresa tu número de celular:
 
 ## solicita_reingresar_celular
@@ -74,7 +74,7 @@
 - El número de contacto no es válido, ingresa nuevamente.
 
 ## solicita_correo
-- {}, para enviar el link de la teleconsulta. Brindanos tu dirección de correo electrónico:
+- {}, para enviar el link de la teleconsulta. Bríndanos tu dirección de correo electrónico:
 - {}, para enviar el link de la teleconsulta. Ingresa tu dirección de correo electrónico:
 
 ## solicita_reingresar_correo
